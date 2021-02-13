@@ -6,7 +6,8 @@
 body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 100%;
-	width: 800px;
+	width: 98%;
+    max-width: 960px;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: auto;
@@ -30,37 +31,37 @@ header{
 	padding: 1.5em 0 2em 0;
 	background-image: linear-gradient(30deg, #ffb70f 0%, #ffb70f 30%, white 50%, #ffb70f 80%, #ffb70f 100%);
 }
-header img { 
-	float: left; 
-	padding: 0 30px 0 30px;			
-	}
+header img {
+    float: left;
+    padding: 0 3.75%;
+}
 header h2 {
     color: #931420;
 	text-shadow: 2px 2px 2px black;	
 }
-.shadow{
-	text-shadow: 2px 2px orange;
-}
+
 header h3 {
 	font-size: 130%;
 	font-style: italic;
 }
+
 #nav_menu ul{
     position: relative;
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-#nav_menu ul li{
-    float: left;
+
+#nav_menu ul li {
+        float: left;
+        width: 20%;
 }
 #nav_menu li a{
-    width: 160px;
     text-align: center;
     padding-top: 1em 0;
     text-decoration: none;
     color: white;
-    font-style: bold;
+    font-weight: bold;
     background-color: #800000;
     display: block;
 }
@@ -69,6 +70,7 @@ header h3 {
 }
 
 #nav_menu ul ul {
+    width: 100%;
     display: none;
     position: absolute;
     top: 100%;
@@ -118,7 +120,10 @@ article h1{
     padding: .5em 0 .25em 0;
     margin: 0 0 0 0;
 }
+
 article img{
+    max-width: 40%;
+    min-width: 150px;
     float: right;
     margin: 2px 0 2px 2px;
     border: 1px solid black;
@@ -132,21 +137,25 @@ article h3{
 }
 
 section{
-	width: 525px;
+	width: 65.625%;
 	float: right;
+}
+section h1{
+    font-size: 150%;
 }
 section h2{
     color: #931420;
+    font-size: 130%;
 }
 
-
 aside{
-	width: 215px;
+	width: 26.875%;
 	float: right;
 	padding: 0 20px 20px 0;
 }
 aside h2{
     color: #931420;
+    font-size: 130%;
 }
 aside h3{
     font-size: 105%;
@@ -159,6 +168,10 @@ aside img{
 main p.indent { text-indent: 2em; }
 main a.date_passed { color: gray; }
 
+.shadow {
+    text-shadow: 2px 2px orange;
+}
+
 /* the styles for the footer */
 footer p {
 	font-size: 90%;
@@ -169,3 +182,45 @@ footer p {
 	color: white;
 	clear: both;
 }
+#mobile_menu {
+    display: none ;
+}
+@media only screen and (max-width: 959px){
+    section h1 {
+        font-size: 130%;
+    }
+    section h2{
+        font-size: 120%;
+    }
+    aside h2{
+        font-size: 120%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    header{
+        text-align: center;
+    }
+    header img{
+        float: none;
+    }
+    section{ float: none;}
+    aside{
+        float: none; 
+        padding: 0% 2.5%;
+        width: 95%
+    }
+    aside div{
+        column-count: 2;
+    }
+    article img{ max-width: 30%; } 
+    #nav_menu{ display: none;}
+    #mobile_menu{ display: block; }
+    .slicknav_menu{ background-color: #800000 !important;}
+}
+
+@media only screen and (max-width: 479px){
+    body{ font-size: 90%; }
+}
+
+
