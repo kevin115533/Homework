@@ -150,6 +150,46 @@ figcaption{
 	margin-bottom: 1em;
 	border-bottom: 1px solid black;
 }
+table caption {
+	text-align: left;
+	color: #800000;
+	font-size: 130%;
+	font-weight: bold;
+	padding: .25em 0;
+}
+table{
+	border-spacing: .5em;
+	width: 425px;
+}
+table th {
+	text-align: left;
+	border-bottom: 2px solid #800000;
+	border-top: 2px solid #800000;
+}
+table td{
+	padding: .2em 0;
+}
+table tfoot {
+	font-weight: bold;
+	border-bottom: 2px solid #800000;
+	border-top: 2px solid #800000;
+}
+tfoot td:nth-child(2){
+	text-align: right;
+}
+table th:first-child{
+	text-align: center;
+}
+th:nth-child(2), td:nth-child(2), td:nth-child(1) {
+	padding-left: 1em;
+}
+td.border-top{
+	border-top: 2px solid #800000;
+}
+td.right-align{
+	text-align: right;
+}
+
 
 /* the styles for the aside */
 aside {
