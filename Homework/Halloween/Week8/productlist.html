@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Halloween Store</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/slicknav.css" >
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+		});
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/pumpkinO.gif" alt="pumkpinO.gif">
+        <h2>The Halloween Store</h2>
+        <h3>For the little Goblin in all of us!</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="#">Product List</a></li>
+            <li><a href="#">Personal</a></li>
+            <li>
+                <a href="#">Decorating Ideas</a>
+                <ul>
+                    <li><a href="#">Outdoor</a></li>
+                    <li><a href="#">Indoor</a></li>
+                    <li><a href="#">Table</a></li>
+                    <li><a href="#">Treats</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Join Email</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Product List</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td><b>Props</b></td>
+                        <td><a href="#">20" Deranged Cat</a></td>
+                        <td>$39.99</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#">Flying Bat</a></td>
+                        <td>$14.99</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#">16" Ugly Rat</a></td>
+                        <td>$14.99</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#">20" Uglier Rat</a></td>
+                        <td>$19.99</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#">Plastic Skeleton</a></td>
+                        <td>$12.50</td>
+                    </tr>
+                    <tr>
+                        <td><b>Costumes</b></td>
+                        <td><a href="#">Austin Powers</a></td>
+                        <td>$79.50</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#">Frankenstein</a></td>
+                        <td>$49.99</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#">Martian</a></td>
+                        <td>$69.99</td>
+                    </tr>
+                    <tr>
+                        <td><b>Special Effects</b></td>
+                        <td><a href="#">Fog Machine</a></td>
+                        <td>$34.99</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#">Fog Juice</a></td>
+                        <td>$9.99</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#">Mini strobe light</a></td>
+                        <td>$14.99</td>
+                    </tr>
+                    <tr>
+                        <td><b>Masks</b></td>
+                        <td><a href="#">Freddy</a></td>
+                        <td>$44.50</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#">Darth Vader</a></td>
+                        <td>$124.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="prod_list">
+            <aside id="prod_list">
+                <ul>
+                    <li><a href="products/props.html">Props</a></li>
+                    <li><a href="products/costumes.html">Costumes</a></li>
+                    <li><a href="products/specialeffects.html">Special FX</a></li>
+                    <li><a href="products/masks.html">Masks</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+</body>
+<footer>
+	<p>&copy;2020 Ben Murach</p>
+<! –– OSUIT Summer 2020 ––>
+</footer>
+</html>

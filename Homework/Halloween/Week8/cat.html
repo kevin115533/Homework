@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Halloween Store</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/slicknav.css" >
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+		});
+    </script>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="images/pumpkinO.gif" alt="pumkpinO.gif">
+        </a>
+        <h2>The Halloween Store</h2>
+        <h3>For the little Goblin in all of us!</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="#">Product List</a></li>
+            <li><a href="#">Personal</a></li>
+            <li>
+                <a href="#">Decorating Ideas</a>
+                <ul>
+                    <li><a href="#">Outdoor</a></li>
+                    <li><a href="#">Indoor</a></li>
+                    <li><a href="#">Table</a></li>
+                    <li><a href="#">Treats</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Join Email</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 class="catheader">20" Deranged cat</h2>
+                <img class="catpic" src="images/cat1.jpg"><br>
+                <p class="desc">This cat provides its own light and is perfect for a backyard haunting.<br /><br />
+                <b>Price:</b> 19.99</p>
+                <div class="leftarea">
+                    <h3><b>Customers who bought this also bought:</b></h3><br />
+                    <div class="inner">
+                        <img src="images/flying_bats.jpg" /><br />
+                        <a href="#">Flying bats</a><br />
+                        <img src="images/rat1.jpg" /><br />
+                        <a href="#">16" ugly rat</a><br />
+                        <img src="images/strobe1.jpg" /><br />
+                        <a href="#">Mini strobe light</a>
+                    </div>
+                </div>
+        </section>
+        <div>
+            <aside id="prod_list">
+                <ul>
+                    <li><a href="products/props.html">Props</a></li>
+                    <li><a href="products/costumes.html">Costumes</a></li>
+                    <li><a href="products/specialeffects.html">Special FX</a></li>
+                    <li><a href="products/masks.html">Masks</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+</body>
+<footer>
+	<p>&copy;2020 Ben Murach</p>
+<! –– OSUIT Summer 2020 ––>
+</footer>
+</html>
